@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section class="test-button">
+      <button class="order-button data-modal-open" type="submit">Order</button>
+    </section>
+
+    <section class="data-modal is-hidden">
+      <div class="modal-content">
+        <!-- replace close span to icon, if possible -->
+        <p class="modal-title">YOUR ORDER</p>
+
+        <div class="modal-order-selection">
+          <ul class="modal-selection modal-order-straw">
+            <li class="modal-h2">Strawberry Basket</li>
+            <li class="modal-p">Plant</li>
+            <li class="modal-order-img">
+              <img src="images/strawberry-basket.png" alt="strawberry-basket" />
+            </li>
+          </ul>
+          <ul class="modal-selection modal-order-apple">
+            <li class="modal-h2">Apple Basket</li>
+            <li class="modal-p">Plant</li>
+            <li class="modal-order-img">
+              <img src="images/apple-crate.png" alt="apple-crate" />
+            </li>
+          </ul>
+          <ul class="modal-selection modal-order-fruits">
+            <li class="modal-h2">Fruits Basket</li>
+            <li class="modal-p">Plant</li>
+            <li class="modal-order-img">
+              <img src="images/fruit-basket.png" alt="fruit-basket" />
+            </li>
+          </ul>
+        </div>
+
+        <div class="form-input-section">
+          <form class="order-modal-form" name="modal-form">
+            <!-- Name -->
+            <label class="modal-form-field">
+              <div>
+                <input
+                  class="modal-form-input"
+                  type="text"
+                  name="customer-name"
+                  id=""
+                  placeholder="Enter full name.."
+                  required
+                />
+              </div>
+            </label>
+
+            <!-- Email -->
+            <label class="modal-form-field">
+              <div>
+                <input
+                  class="modal-form-input"
+                  type="email"
+                  name="user-email"
+                  placeholder="Enter email.."
+                  required
+                />
+              </div>
+            </label>
+
+            <!-- Card -->
+            <label class="modal-form-field">
+              <div>
+                <input
+                  class="modal-form-input"
+                  type="number"
+                  name="user-credit-card"
+                  id=""
+                  placeholder="Enter card.."
+                  required
+                />
+              </div>
+            </label>
+
+            <!--  Comments -->
+            <label class="modal-form-field-comm">
+              <div>
+                <textarea
+                  class="modal-form-textarea"
+                  name="user-feedback"
+                  rows="8"
+                  placeholder="Enter comments.."
+                ></textarea>
+              </div>
+            </label>
+
+            <!-- Form Button -->
+            <button class="modal-form-button" type="submit">Submit</button>
+          </form>
+          <img
+            class="lady-banana"
+            src="images/lady-banana.png"
+            alt="lady-holding-banana"
+          />
+        </div>
+      </div>
+    </section>
+    <script src="js/modal-order.js"></script>
+  </body>
+</html>
